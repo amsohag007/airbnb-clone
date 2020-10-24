@@ -1,6 +1,6 @@
 .banner {
   object-fit: contain;
-  height: 660px;
+  height: 720px;
 }
 
 .banner__info {
@@ -11,18 +11,6 @@
   padding-bottom: 60px;
   width: 380px;
   font-size: 1.3rem;
-}
-
-.banner__search {
-  display: flex;
-  flex-direction: column;
-}
-
-.banner__searchButton {
-  background-color: white !important;
-  font-weight: 900 !important;
-  text-transform: inherit !important;
-  color: #ff7779 !important;
 }
 
 .banner__info > button {

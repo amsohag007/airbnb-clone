@@ -16,6 +16,7 @@
 }
 /* search bar */
 .header__center {
+  margin-left: 90px;
   display: flex;
   flex: 1;
   align-items: center;
@@ -24,21 +25,82 @@
   height: 34px;
   border: 3px solid lightgray;
   border-radius: 999px;
+  font-weight: 600;
   /* margin-left: 6rem; */
 }
 
 .header__center > input {
-  border: none;
   padding: 10px;
   outline-width: 0;
-  /* width: 250px; */
+  width: 250px;
+}
+.header__center > button {
+  border-radius: 30px;
+  text-transform: inherit;
+  margin: 5px;
+  padding: 10px;
+  font-weight: 600;
+}
+.header__searchDateButton {
+  border-radius: 50px;
+  text-transform: inherit;
+  margin: 5px;
+  padding: 10px;
+  font-weight: 600;
+}
+.header__searchCalender {
+  position: relative;
+  top: 0rem;
+  right: 250px;
+}
+.header__centerSearchIcon {
+  border: 2px solid lightgray;
+  border-radius: 50%;
+  padding-top: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+  background-color: #ff7779 !important;
+  color: white;
+  transition: transform ease-in;
+}
+.header__centerSearchIcon :hover {
+  transform: scale(1.18);
 }
 /* ----------------- */
 
 .header__right {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 10em;
-  margin-right: 80px;
+  /* justify-content: space-between; */
+  width: 20rem;
+  margin-right: 10px;
+}
+.header__right > button {
+  border-radius: 30px;
+  text-transform: inherit;
+  margin: 5px;
+  padding: 10px;
+  font-weight: 600;
+}
+.header__rightAvatar {
+  display: flex;
+}
+
+@media (max-width: 480px) {
+  .header__icon {
+    padding-left: 0px;
+    margin-left: 0;
+  }
+  .header__center {
+    margin-left: 10px;
+    display: flex;
+    flex: 1;
+  }
+  .header__right {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    width: 10rem;
+    margin-right: 20px;
+  }
 }
