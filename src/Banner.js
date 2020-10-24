@@ -9,7 +9,17 @@ function Banner() {
   const [showSearch, setShowSearch] = useState(false);
 
   return (
-    <div className="banner">
+    <div
+      className="banner"
+      style={{
+        backgroundSize: "cover",
+        backgroundImage: `url("https://images.hdqwalls.com/download/cozy-little-house-in-mountains-4k-3h-2560x1440.jpg"
+          
+        )`,
+        backgroundPosition: "center center",
+        // "https://images.hdqwalls.com/wallpapers/airbnb-in-the-90s-uc.jpg"
+      }}
+    >
       <div className="banner__search">
         {showSearch && <Search />}
 
@@ -22,11 +32,11 @@ function Banner() {
         </Button>
       </div>
       <div className="banner__info">
-        <h1>Get out and stretch your imagination</h1>
-        <h5>
-          Plan a different kind of getaway to uncover the hidden gems near you.
-        </h5>
-        <Button variant="outlined">
+        <h1>Go Near</h1>
+        <h4>
+          Settle in somewhere new. Discover stays to live, work, or just relax.
+        </h4>
+        <Button className="banner__infoButton" variant="outlined">
           {/* onClick={() => history.push("/search")}  */}
           Explore Nearby
         </Button>
